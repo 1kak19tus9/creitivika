@@ -1,9 +1,13 @@
-num = int(input())
-def t(num):
-    if num == 1:
-        print (1)
-        return 1
+tasks = ['Понюхать пингвина', 'Испытать экзистенциальный ужас', 'Выключить утюг своих забот']
+
+command = input('Введите команду: ')
+while command != "выход":
+    if command == "добавить":
+        new_task = input("Добавить задачу: ")
+        tasks.append(new_task)
+        print('Добавлено!')
+        print(tasks)
     else:
-        print(num)
-        return t(num - 1) 
-t(num)   
+        print('Не знаю такой команды')
+    command = input('Введите команду: ')
+    
