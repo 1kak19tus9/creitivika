@@ -1,15 +1,16 @@
-import random as r
-def proverka(A,B):
-    if A == B:
-        B = r.randint(1, 9)
-a = r.randint(1, 9)
-b = r.randint(1, 9)
-k = r.randint(1, 9)
-while a == b:
-    proverka(a, b)
-while b == k:
-    proverka(b, k)
-while a == k:
-    proverka(a, k)
-g = str(a)+str(b)+str(k)
-print(g)
+w = 5
+person = {"name": "Jake", "age": 18, "height": 194, "eyes": "brown", "zodiac sign": "scales", "country": "France"}
+while w == 5:
+    a = input("Choose command:new property or remake or exit:")
+    if a == "remake":
+        b = input("Choose item:")
+        c = input("Wright remake:")
+    elif a == "new property":
+        d = input("Wright item:")
+        e = input("Wright meaning:")
+        person[d] = e
+    elif a == "exit":
+      w = 6
+    else:
+       a = input("Choose command:new property or remake:")
+print(person)

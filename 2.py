@@ -1,34 +1,15 @@
-import random as r
-def proverka(A,B):
-    if A == B:
-        B = r.randint(1, 9)
-a = r.randint(1, 9)
-b = r.randint(1, 9)
-k = r.randint(1, 9)
-while a == b:
-    proverka(a, b)
-while b == k:
-    proverka(b, k)
-while a == k:
-    proverka(a, k)
-g = str(a)+str(b)+str(k)
-#########################
-import random as r
-def proverka(A,B):
-    if A == B:
-        B = r.randint(1, 9)
-w = r.randint(1, 9)
-t = r.randint(1, 9)
-p = r.randint(1, 9)
-while w == t:
-    proverka(w, t)
-while t == p:
-    proverka(t, p)
-while w == p:
-    proverka(w, p)
-o = str(w)+str(t)+str(p)
-#########################
-if g == o:
-    print(True)
-else:
-    print(False)
+person = {"name": "Илья Павлович Гашев", "math 4; PE 5; English 4; Art 5"}
+while True:
+    a = input("Choose command:new property or remake or exit:")
+    if a == "remake":
+        b = input("Choose item:")
+        c = int(input("Wright remake:"))
+    elif a == "new property":
+        d = input("Wright item:")
+        e = int(input("Wright meaning:"))
+        person[d] = e
+    elif a == "exit":
+      break
+    else:
+       a = input("Choose command:new property or remake:")
+print(person and lessons)
