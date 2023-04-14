@@ -1,0 +1,18 @@
+from operator import itemgetter
+l = [{'name':'tin','rec':20},{'name':'yu','rec':13},{'name':'may','rec':17}]
+while True:
+    name = input('add name:')
+    rec = int(input('add record:'))
+    if name in l:
+        for i in l():
+            if i == name:
+                
+        new = {'name':name, 'rec':rec}
+        l.append(new)
+        newl = sorted(l,key=itemgetter('rec'))
+    else:
+        new = {'name':name, 'rec':rec}
+        l.append(new)
+        newl = sorted(l,key=itemgetter('rec'))
+    print("newl: ",newl)
+
