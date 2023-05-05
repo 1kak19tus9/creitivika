@@ -1,0 +1,7 @@
+rock =  {'group': ['Кино','Король и Шут','Ария', 'КняZz','Сектор Газа', 'Би-2','Любэ', 'ABBA', 'ДДТ']}
+jazz =  {'group': ['Jamiroquai','Incognito','Blood, Sweat & Tears', 'Mills Brothers']}
+k-pop =  {'group': ['Rammstein','AC/DC','Queen', 'Сектор Газа','Nirvana', 'The Beatles','Heart of a Coward']}
+classic = {'group': ['Rammstein','AC/DC','Queen', 'Сектор Газа','Nirvana', 'The Beatles','Heart of a Coward']}
+hard_rock = {'group': ['Rammstein','AC/DC','Queen', '','Nirvana', 'The Beatles','Heart of a Coward']}
+chanson = {'group': ['Rammstein','AC/DC','Queen', 'Сектор Газа','Nirvana', 'The Beatles','Heart of a Coward']}
+pop = {'group': ['Rammstein','AC/DC','Queen', 'Сектор Газа','Nirvana', 'The Beatles','Heart of a Coward']}
