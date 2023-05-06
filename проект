@@ -1,7 +1,84 @@
-rock =  {'group': ['Кино','Король и Шут','Ария', 'КняZz','Сектор Газа', 'Би-2','Любэ', 'ABBA', 'ДДТ']}
-jazz =  {'group': ['Jamiroquai','Incognito','Blood, Sweat & Tears', 'Mills Brothers']}
-k-pop =  {'group': ['Rammstein','AC/DC','Queen', 'Сектор Газа','Nirvana', 'The Beatles','Heart of a Coward']}
-classic = {'group': ['Rammstein','AC/DC','Queen', 'Сектор Газа','Nirvana', 'The Beatles','Heart of a Coward']}
-hard_rock = {'group': ['Rammstein','AC/DC','Queen', '','Nirvana', 'The Beatles','Heart of a Coward']}
-chanson = {'group': ['Rammstein','AC/DC','Queen', 'Сектор Газа','Nirvana', 'The Beatles','Heart of a Coward']}
-pop = {'group': ['Rammstein','AC/DC','Queen', 'Сектор Газа','Nirvana', 'The Beatles','Heart of a Coward']}
+rock =  {'group': ['Кино',
+                   'Король и Шут',
+                   'Ария',
+                   'КняZz',
+                   'Сектор Газа',
+                   'Би-2',
+                   'Любэ',
+                   'ABBA',
+                   'ДДТ']}
+jazz =  {'group': ['Jamiroquai',
+                   'Incognito',
+                   'Blood, Sweat & Tears',
+                   'Mills Brothers']}
+k-pop =  {'group': ['BTS',
+                    'Stray kids',
+                    'Blackink',
+                    'Astro','NewJeans',
+                    'Exo',
+                    'Billlie']}
+hard_rock = {'group': ['Rammstein',
+                       'AC/DC',
+                       'Queen',
+                       'Nirvana',
+                       'The Beatles',
+                       'Heart of a Coward',
+                       'Nautilus Pompilius']}
+chanson = {'group': ['Михаил Круг',
+                     'Григорий Лепс',
+                     'Петлюра',
+                     'Михаил Шуфутинский']}
+pop = {'group': ['MBAND',
+                 'Тату',
+                 'Дискотека Авария',
+                 'Ласковый май',
+                 'Градусы',
+                 'Пицца']}
+alltracks = {}
+allganres = [rock, jazz, k-pop, hard_rock, chansos, pop]
+for ganre in allganres:
+    for artist in genre['group']:
+        alltracks[artist] = []
+kino = ['Группа крови'
+'Закрой за мной дверь',
+'Война',
+'Спокойная ночь',
+'Мама, мы все тяжело больны',
+'Бошетунмай',
+'В наших глазах',
+'Попробуй спеть вместе со мной',
+'Прохожий',
+'Дальше действовать будем мы',
+'Легенда',]
+alltracks['Кино'] = kino
+KiSH = ['Dont crucify me',
+        '',]
+alltracks['Король и Шут'] = KiSH
+
+
+genre = input('Выбирите музыкальный жанр(rock; jazz; k-pop; hard_rock; chanson; pop):')
+if genre == 'rock':
+    print('Группы жанра rock:')
+    print(rock)
+    choice = input('Предложить ли вам песни групп из списка(yes/no):')
+    if choise == 'no':
+        break
+    elif choise == 'yes':
+        choice_group = input('Выберите группу из списка выше:')
+        if choice_group == 'Кино':
+            
+elif genre == 'jazz':
+    print('Группы жанра jazz')
+    print(jazz)
+elif genre == 'k-pop':
+    print('Группы жанра k-pop')
+    print(k-pop)
+elif genre == 'hard_rock':
+    print('Группы жанра hard_rock')
+    print(hard_rock)
+elif genre == 'chanson':
+    print('Группы жанра chanson')
+    print(chanson)
+elif genre == 'pop':
+    print('Группы жанра pop')
+    print(pop)
