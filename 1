@@ -1,0 +1,10 @@
+it = {}
+while True:
+    a = input('введите логин: ')
+    b = input('введите пароль: ')
+    c = {a:b}
+    if len(b) < 8:
+        print('коротковато, думай лучше')
+    else:
+        it.update(c)
+        print(it)
